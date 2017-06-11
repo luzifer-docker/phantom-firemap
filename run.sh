@@ -6,7 +6,7 @@ H=1241 # 150 x  8.27
 
 /usr/bin/phantomjs /src/index.js $1 $2 $3
 
-TARGET="$4_$(date +%Y-%m-%d_%H-%M)"
+TARGET="$4"
 mv /data/shot.png /data/${TARGET}.png
 
 exec convert /data/${TARGET}.png -compress jpeg -quality 90 \
